@@ -1,0 +1,14 @@
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\bin\Debug\net10.0\UltraParser.exe
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\bin\Debug\net10.0\UltraParser.deps.json
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\bin\Debug\net10.0\UltraParser.runtimeconfig.json
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\bin\Debug\net10.0\UltraParser.dll
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\bin\Debug\net10.0\UltraParser.pdb
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\obj\Debug\net10.0\UltraParser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\obj\Debug\net10.0\UltraParser.AssemblyInfoInputs.cache
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\obj\Debug\net10.0\UltraParser.AssemblyInfo.cs
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\obj\Debug\net10.0\UltraParser.csproj.CoreCompileInputs.cache
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\obj\Debug\net10.0\UltraParser.dll
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\obj\Debug\net10.0\refint\UltraParser.dll
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\obj\Debug\net10.0\UltraParser.pdb
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\obj\Debug\net10.0\UltraParser.genruntimeconfig.cache
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\obj\Debug\net10.0\ref\UltraParser.dll
