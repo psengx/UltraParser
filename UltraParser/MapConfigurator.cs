@@ -38,7 +38,7 @@ public int GetColumnIndex()
     {
         if (_columnIndex != -1) 
             return _columnIndex;
-        throw new Exception();
+        throw new ArgumentOutOfRangeException();
     }
 
     public int GetColumnIndex(string[] headers)
@@ -46,7 +46,7 @@ public int GetColumnIndex()
         if (_columnIndex != -1) 
             return _columnIndex;
         if (headers.Length == 0)
-            throw new Exception();
+            throw new ArgumentException();
         if (_columnName != null)
         {
             _columnIndex = Array.IndexOf(headers, _columnName);
@@ -54,18 +54,21 @@ public int GetColumnIndex()
             if (_columnIndex != -1)
                 return _columnIndex;
         }
-        throw new Exception();
+        throw new TableReaderColumnNotFoundException();
     }
 
     public MapConfigurator(Expression<Func<T, TProperty>> selector, TableReader<T>  tableReader)
     {
+        _tableReader = tableReader ?? throw new ArgumentNullException(nameof(tableReader));
+        if (selector == null) throw new ArgumentNullException(nameof(selector));
+        
         if (selector.Body is not MemberExpression memberExpression)
         {
-            throw new Exception();
+            throw new ArgumentException("Выражение должно обращаться к свойству");
         }
         if (memberExpression.Member is not PropertyInfo propertyInfo)
         {
-            throw new Exception();
+            throw new ArgumentException("Выражение должно ссылаться именно на свойство, а не на поле");
         }
         ParameterExpression objectParameter = Expression.Parameter(typeof(T));
         MemberExpression member = Expression.Property(objectParameter, propertyInfo);
@@ -144,7 +147,7 @@ public int GetColumnIndex()
         else
         {
             if (_convert == null)
-                throw new Exception();
+                throw new ArgumentNullException();
             value = _convert.Invoke(stringValue);
         }
         

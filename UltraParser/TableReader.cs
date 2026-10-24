@@ -34,7 +34,7 @@ public class TableReader<T> :
         ConstructorInfo? constructor = type.GetConstructor(Type.EmptyTypes);
 
         if (constructor == null)
-            throw new Exception();
+            throw new InvalidOperationException();
         
         NewExpression newExpression = Expression.New(constructor);
         _createInstance = Expression.Lambda<Func<T>>(newExpression).Compile();
@@ -124,6 +124,7 @@ public class TableReader<T> :
 
     public List<T> ToList()
     {
+        if (_stream == null) throw new InvalidOperationException("Поток пуст. Сначала вызовите FromCsv() или FromXlsx()");
         List<T> result = [];
 
         IEnumerable<string[]> lines;
@@ -134,7 +135,7 @@ public class TableReader<T> :
                 lines = ReadCsv(); break;
             case SourceType.Xlsx:
                 throw new NotImplementedException();
-            default: throw new Exception();
+            default: throw new InvalidOperationException("Не выбран исходный тип");
         }
         string[] header = [];
         if (_withHeader)

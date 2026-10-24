@@ -101,3 +101,4 @@ C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser
 C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\Tests\bin\Debug\net10.0\UltraParser.exe
 C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\Tests\bin\Debug\net10.0\UltraParser.dll
 C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\Tests\bin\Debug\net10.0\UltraParser.pdb
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\Tests\obj\Debug\net10.0\Tests.sourcelink.json
