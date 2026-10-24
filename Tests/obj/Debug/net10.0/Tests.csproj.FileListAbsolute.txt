@@ -102,3 +102,12 @@ C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser
 C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\Tests\bin\Debug\net10.0\UltraParser.dll
 C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\Tests\bin\Debug\net10.0\UltraParser.pdb
 C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\Tests\obj\Debug\net10.0\Tests.sourcelink.json
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\Tests\bin\Debug\net10.0\ClosedXML.dll
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\Tests\bin\Debug\net10.0\ClosedXML.Parser.dll
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\Tests\bin\Debug\net10.0\DocumentFormat.OpenXml.dll
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\Tests\bin\Debug\net10.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\Tests\bin\Debug\net10.0\ExcelNumberFormat.dll
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\Tests\bin\Debug\net10.0\RBush.dll
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\Tests\bin\Debug\net10.0\SixLabors.Fonts.dll
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\Tests\bin\Debug\net10.0\System.IO.Packaging.dll
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\Tests\bin\Debug\net10.0\ExcelDataReader.dll

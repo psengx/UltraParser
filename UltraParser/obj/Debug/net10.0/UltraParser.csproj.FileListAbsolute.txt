@@ -13,3 +13,6 @@ C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser
 C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\obj\Debug\net10.0\UltraParser.genruntimeconfig.cache
 C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\obj\Debug\net10.0\ref\UltraParser.dll
 C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\obj\Debug\net10.0\UltraParser.sourcelink.json
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\bin\Debug\net10.0\ExcelDataReader.dll
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\obj\Debug\net10.0\UltraParser.csproj.AssemblyReference.cache
+C:\Users\psengx\Documents\ithube\proghub\шарп 3 курс 10 кт\UltraParser\UltraParser\obj\Debug\net10.0\UltraPar.905984F3.Up2Date

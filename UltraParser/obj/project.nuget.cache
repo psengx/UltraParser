@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "EhzSp1DkNXk=",
+  "dgSpecHash": "w5IEMe7MXJE=",
   "success": true,
   "projectFilePath": "C:\\Users\\psengx\\Documents\\ithube\\proghub\\шарп 3 курс 10 кт\\UltraParser\\UltraParser\\UltraParser.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\psengx\\.nuget\\packages\\exceldatareader\\3.9.0\\exceldatareader.3.9.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,6 +1,7 @@
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
+using ExcelDataReader;
 using UltraParser.Models;
 
 namespace UltraParser;
@@ -74,10 +75,12 @@ public class TableReader<T> :
     public ITableReaderXlsxConfigurator<T> FromXlsx(string path)
     {
         _sourceType  = SourceType.Xlsx;
+        _stream = File.OpenRead(path);
         return this;
     }
     public ITableReaderXlsxConfigurator<T> FromXlsx(Stream stream)
     {
+        _stream = stream;
         _sourceType = SourceType.Xlsx;
         return this;
     }
@@ -134,7 +137,7 @@ public class TableReader<T> :
             case SourceType.Csv:
                 lines = ReadCsv(); break;
             case SourceType.Xlsx:
-                throw new NotImplementedException();
+                lines = ReadXlsx(); break;
             default: throw new InvalidOperationException("Не выбран исходный тип");
         }
         string[] header = [];
@@ -200,7 +203,8 @@ public class TableReader<T> :
     }
 
     private IEnumerable<string[]> ReadCsv()
-    {   
+    {
+        _stream.Seek(0, SeekOrigin.Begin);
         StreamReader reader = new StreamReader(_stream);
 
         string? str = null;
@@ -209,6 +213,26 @@ public class TableReader<T> :
         {
             yield return str.Split(_delimiter);
         }
+        reader.Dispose();
+        yield break;
+    }
+
+    public IEnumerable<string[]> ReadXlsx()
+    {
+        _stream.Seek(0, SeekOrigin.Begin);
+        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+
+        IExcelDataReader reader = ExcelReaderFactory.CreateReader(_stream);
+        while (reader.Read())
+        {
+            string[] row = new string[reader.FieldCount];
+            for (int i = 0; i < reader.FieldCount; i++)
+            { 
+                row[i] = reader.GetValue(i)?.ToString() ?? string.Empty;
+            }
+
+            yield return row;
+        } 
         reader.Dispose();
         yield break;
     }
